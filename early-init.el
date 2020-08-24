@@ -8,6 +8,11 @@
 
 ;;; Code:
 
+(setq url-proxy-services
+      '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
+        ("http" . "0.0.0.0:1087")
+             ("https" . "0.0.0.0:1087")))
+
 (setq package-enable-at-startup nil)
 
 ;; So we can detect this having been loaded
